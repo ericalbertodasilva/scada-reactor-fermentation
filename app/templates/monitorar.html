@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Reatores para Fermtação</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-6" style="margin: 5px;">
+                
+                <div class="input-group mb-1">
+                    <span class="input-group-text" style="width: 110px">Temperatura:</span>
+                    <input class="input-group-text" style="width: 290px" type="number" placeholder="Temperatura" id="temperatura" disabled>
+                </div>
+                <div class="input-group mb-1">
+                    <span class="input-group-text" style="width: 110px">Umidade:</span>
+                    <input class="input-group-text" style="width: 290px" type="number" placeholder="%" id="UR" disabled>
+                </div>
+                
+                <div class="input-group mb-1" >
+                    <div id='curve_chart1'></div>
+                </div>
+                <div class="input-group mb-1" >
+                    <div id='curve_chart2'></div>
+                </div>
+            </div>
+            <div class="col-xs-6" style="margin: 5px;">
+            <div class="input-group mb-1">
+                    <span class="input-group-text" style="width: 110px">Reator 1 Co2:</span>
+                    <input class="input-group-text" style="width: 290px" type="number" placeholder="Co2" id="reator1_co2" disabled>
+                </div>
+                <div class="input-group mb-1">
+                    <span class="input-group-text" style="width: 110px">Reator 2 Co2:</span>
+                    <input class="input-group-text" style="width: 290px" type="number" placeholder="Co2" id="reator2_co2" disabled>
+                </div>
+                <div class="input-group mb-1" >
+                    <div id='curve_chart3'></div>
+                </div>
+                <div class="input-group mb-1" >
+                    <div id='curve_chart4'></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input type="button" class="btn btn-primary" value="Tela Cheia" onclick="toggleFullScreen()"  style="width: 150px; border-style: solid; border-color: black;">
+    <input type="button" class="btn btn-primary" value="Zerar Reator 1" id="zerar_reator1"  style="width: 150px; border-style: solid; border-color: black;">
+    <input type="button" class="btn btn-primary" value="Zerar Reator 2" id="zerar_reator2"  style="width: 150px; border-style: solid; border-color: black;">
+    <footer style="text-align: center;">
+        <p><b>E A DA SILVA SOLUÇÔES</b> - Celular: 19 9 8198-7800</p>
+    </footer>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='jquery-3.3.1.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='bootstrap.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='loader.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='grafico.js') }}"></script>    
+</body>
+
+</html>
+
+
+
