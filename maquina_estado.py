@@ -1,9 +1,6 @@
 # coding: utf-8
 
-import time
-import sqlite3
 from com_arduino import *
-from datetime import datetime
 
 while True:
     try:
