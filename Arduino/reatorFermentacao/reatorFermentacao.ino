@@ -121,7 +121,7 @@ void decodeRequest()
 void setup() {
   _dht.begin();
   // initialize serial communication at 9600 bits per second:
-  Serial.begin(57600);
+  Serial.begin(115200);
   // make the pushbutton's pin an input:
   pinMode(sensor1, INPUT);
   pinMode(sensor2, INPUT);
